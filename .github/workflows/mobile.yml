@@ -1,5 +1,6 @@
 name: Signer Interactoin Component iOS SDK
 
+on: push
 
 jobs:
   build:
