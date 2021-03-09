@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "KeychainSwift",
+        "repositoryURL": "https://github.com/evgenyneu/keychain-swift.git",
+        "state": {
+          "branch": null,
+          "revision": "96fb84f45a96630e7583903bd7e08cf095c7a7ef",
+          "version": "19.0.0"
+        }
+      },
+      {
+        "package": "sic-sdk",
+        "repositoryURL": "git@github.com:cleverbase/sic-sdk-spm-package.git",
+        "state": {
+          "branch": null,
+          "revision": "49cb91d718233d35f67f1051f9166537313624c8",
+          "version": "1.0.4"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

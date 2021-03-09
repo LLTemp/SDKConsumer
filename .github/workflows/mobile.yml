@@ -1,0 +1,21 @@
+name: Signer Interactoin Component iOS SDK
+
+
+jobs:
+  build:
+    runs-on: macos-10.15
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+
+############## Add GitHub to KnownHosts
+    - name: Add GitHub to KnownHosts
+      run: for ip in $(dig @8.8.8.8 github.com +short); do ssh-keyscan github.com,$ip; ssh-keyscan $ip; done 2>/dev/null >> ~/.ssh/known_hosts
+
+
+############# Run tests
+    - name: Run unit tests
+      run: xcodebuild -project ./SDKConsumer.xcodeproj
